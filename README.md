@@ -1,21 +1,31 @@
-# Soroban Project
+# Smart Parking System Using IoT
 
-## Project Structure
+## Project Overview
+The **Smart Parking System Using IoT** is a decentralized application (dApp) built on the **Stellar blockchain** using **Soroban smart contracts**. This system allows users to book, cancel, and track parking slots in real time with the help of IoT sensors. The use of blockchain ensures transparency and immutability, while IoT enhances the automation and real-time interaction of the parking system.
 
-This repository uses the recommended structure for a Soroban project:
-```text
-.
-├── contracts
-│   └── hello_world
-│       ├── src
-│       │   ├── lib.rs
-│       │   └── test.rs
-│       └── Cargo.toml
-├── Cargo.toml
-└── README.md
-```
+## Contract Address Details:
+CAN3YDCQALSKNXTN3BTMZD43HG6LSGPN7MEJHVLPKHTBZ6Q55EXVRPJE
+![alt text](image.png)
 
-- New Soroban contracts can be put in `contracts`, each in their own directory. There is already a `hello_world` contract in there to get you started.
-- If you initialized this project with any other example contracts via `--with-example`, those contracts will be in the `contracts` directory as well.
-- Contracts should have their own `Cargo.toml` files that rely on the top-level `Cargo.toml` workspace for their dependencies.
-- Frontend libraries can be added to the top-level directory as well. If you initialized this project with a frontend template via `--frontend-template` you will have those files already included.
+## Features
+- **Slot Booking**: Users can reserve parking slots using a unique identifier.
+- **Slot Cancellation**: Users can cancel their booking before using the parking slot.
+- **Slot Status Viewer**: Anyone can view the current status (available or booked) of parking slots.
+- **Immutable Transactions**: All bookings and cancellations are stored on the Stellar blockchain to ensure transparency and prevent any potential disputes.
+- **IoT Integration**: The system integrates IoT sensors to automatically detect vehicle presence and update slot status in real-time.
+
+## Technology Stack
+- **Blockchain**: Stellar Network (Soroban smart contracts)
+- **IoT**: Integration with IoT sensors for real-time parking slot updates
+- **Frontend**: React (for web/mobile interface)
+- **Backend**: Node.js, Express.js
+- **Database**: SQLite (for storing user data temporarily)
+- **Smart Contract Language**: Rust (using Soroban SDK)
+
+## Installation
+
+### Prerequisites
+1. **Install Rust**: Follow the instructions from [Rust Official Website](https://www.rust-lang.org/tools/install) to install Rust.
+2. **Install Stellar CLI**: Install the Stellar CLI to interact with the Stellar network.
+   ```bash
+   npm install -g stellar-cli
